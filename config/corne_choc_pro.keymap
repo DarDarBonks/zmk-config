@@ -19,11 +19,11 @@
         qwertz {
             display-name = "QWERTZ";
 
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |       |       |  Z  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |       |       |  H  |  J   |  K  |  L  | SPC | LALT |
-            // | SHFT |  Y  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  -  | ESC  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |       |       |  Z  |  U  |  I  |  O  |  P  | FUNC |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |       |       |  H  |  J  |  K  |  L  | BSPC|  GER |
+            // | SHFT |  Y  |  X  |  C  |  V  |  B  |               |  N  |  M  |  ,  |  .  |  -  | ESC  |
+            //                    | GUI | RSE | SPC |               | ENT | LWR | ALT |
 
             bindings = <
 &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R  &kp DE_T   &trans  &trans  &kp DE_Z  &kp DE_U  &kp DE_I      &kp DE_O    &kp DE_P       &mo 4
@@ -37,10 +37,10 @@
             display-name = "RAISE";
 
             // -----------------------------------------------------------------------------------------
-            // |      |  1  |  2  |  3  |  4  |  5    |       |       |  6  |  7  |  8  |  9  |  0  |      |
-            // |      |     |     |     |     |       |       |       | LFT | DWN |  UP | RGT |  F4 |      |
-            // |      | BT1 | BT2 | BT3 | BT4 | Unlock|       |       |     | TAB |     |     |     |      |
-            //                    | GUI |     | SPC   |       | ENT   |     | ALT |
+            // |      |  !  |  ?  |  §  |  $  |  #  |       |       |  +  |  7  |  8  |  9  |  0  |      |
+            // |      |  ^  |  '  |  "  |  `  |  &  |       |       |  *  |  4  |  5  |  6  |  =  |      |
+            // | UNLK |  /  |  |  |  \  |  @  |  €  |               |  %  |  1  |  2  |  3  | TAB |      |
+            //                    |     |     |     |               |     |     |     |
 
             bindings = <
 &trans          &kp DE_EXCL   &kp DE_QUESTION      &kp DE_SECT           &kp DE_DLLR   &kp DE_HASH  &trans  &trans  &kp DE_PLUS     &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0     &trans
@@ -54,10 +54,10 @@
             display-name = "LOWER";
 
             // -----------------------------------------------------------------------------------------
-            // |      |  !  |  @  |  #  |  $  |  %  |       |       |  ^  |  &  |  *  |  (  |  )  |      |
-            // |      |  ?  | RGB |     |     |     |       |       |  -  |  =  |  [  |  ]  |  \  |      |
-            // |      | BTCR|     | RST |     | BOOT|               |  _  |  +  |  {  |  }  | "|" |      |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
+            // |      |     |     |  [  |  ]  |  %  |       |       |  ^  |  &  |  *  |  (  |  )  |      |
+            // |      | DEL |  <  |  (  |  )  |  >  |       |       |  -  |  =  |  [  |  ]  |  \  |      |
+            // |      | CUT | PST |  {  |  }  | BOOT|               |  _  |  +  |  {  |  }  |  |  |      |
+            //                    |     |     |     |               |     |     |     |
 
             bindings = <
 &trans  &trans      &trans       &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp PRCNT    &trans  &trans  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
@@ -70,10 +70,10 @@
         german_layer {
             display-name = "GER";
 
-            // --------------------------------------------------------------------------------
-            // |      |     |     |  €  |     |     |       |       |     |  ü  |     |  ö  |     |      |
-            // |      |  ä  |  ß  |  °  |     |     |       |       |     |     |     |     |     |      |
-            // |      |  ²  |  ³  |     |     |     |               |     |  µ  |     |     |  §  |      |
+            // -----------------------------------------------------------------------------------------
+            // |      |     |     |     |     |     |       |       |     |  ü  |     |  ö  |     |      |
+            // |      |  ä  |  ß  |     |     |     |       |       |     |     |     |     |     |      |
+            // |      |     |     |     |     |     |               |     |     |     |     |     |      |
             //                    |     |     |     |               |     |     |     |
 
             bindings = <
@@ -86,6 +86,13 @@
 
         function {
             display-name = "FUNC";
+
+            // -----------------------------------------------------------------------------------------
+            // |      |     |     |     |     |     |       |       |     | F9  | F10 | F11 | F12 |      |
+            // |      |     |     |     |     |     |       |       |     | F5  | F6  | F7  | F8  |      |
+            // |      |     |     |     |     |     |               |     | F1  | F2  | F3  | F4  |      |
+            //                    |     |     |     |               |     |     |     |
+
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
