@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+    - name: m165437
+      url-base: https://github.com/M165437
     - name: whoop-t
       url-base: https://github.com/whoop-t
     # Additional modules containing boards/shields/custom code can be listed here as well
@@ -13,11 +13,10 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: zmk-nice-oled
-      remote: mctechnology17
+    - name: nice-view-gem
+      remote: m165437
+    - name: nice-luffy-gear-five
+      remote: whoop-t
       revision: main
-    - name: nice-luffy-gear-five #new entry
-      remote: whoop-t #new entry
-      revision: main #new entry
   self:
     path: config
