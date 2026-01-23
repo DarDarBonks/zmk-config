@@ -104,11 +104,19 @@
         };
 
         qwertz {
+            display-name = "QWERTZ";
+
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |               |  Z  |  U  |  I  |  O  |  P  | FUNC |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |               |  H  |  J  |  K  |  L  | BSPC|  GER |
+            // | SHFT |  Y  |  X  |  C  |  V  |  B  |               |  N  |  M  |  ,  |  .  |  -  | ESC  |
+            //                    | GUI | RSE | SPC |               | ENT | LWR | ALT |
+
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&kp ESC    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R  &kp DE_T  &trans  &trans  &kp DE_Z  &kp DE_U  &kp DE_I  &kp DE_O  &trans        &mo 3
+&trans   &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F  &kp DE_G  &trans  &trans  &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L  &kp DE_P      &kp BACKSPACE
+&trans   &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V  &kp DE_B                       &kp DE_N  &kp DE_M  &kp DE_COMMA  &kp DE_DOT     &kp DE_MINUS  &trans 
+                               &trans   &trans      &trans                      &trans    &trans      &trans 
             >;
         };
     };
