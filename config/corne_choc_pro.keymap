@@ -15,6 +15,17 @@
 };
 
 / {
+    behaviors {
+        HoldTap: HoldTap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,10 +39,10 @@
             //                    | GUI | RSE | SPC |               | ENT | LWR | ALT |
 
             bindings = <
-&kp DE_J   &kp DE_Z  &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q         &trans  &trans  &kp DE_P  &kp DE_B  &kp DE_M      &kp DE_L    &kp DE_F  &kp DE_ESZETT
-&kp LCTRL  &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O         &trans  &trans  &kp DE_D  &kp DE_T  &kp DE_N      &kp DE_R    &kp DE_H  &kp BACKSPACE
-&kp LSHFT  &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT                  &kp DE_W  &kp DE_G  &kp DE_COMMA  &kp DE_DOT  &kp DE_K  &kp TAB
-                               &kp LGUI         &mo 1            &kp SPACE                        &kp RET   &mo 2     &kp LEFT_ALT
+&kp DE_J   &kp DE_Z  &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q               &trans  &trans  &kp DE_P                 &kp DE_B  &kp DE_M                   &kp DE_L    &kp DE_F  &kp DE_ESZETT
+&kp LCTRL  &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O               &trans  &trans  &kp DE_D                 &kp DE_T  &kp DE_N                   &kp DE_R    &kp DE_H  &kp BACKSPACE
+&kp LSHFT  &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT                        &kp DE_W                 &kp DE_G  &kp DE_COMMA               &kp DE_DOT  &kp DE_K  &kp TAB
+                               &kp LGUI         &mo 1            &HoldTap LSHIFT SPACE                  &HoldTap LEFT_ALT ENTER  &mo 2     &HoldTap LEFT_CONTROL TAB
             >;
         };
 
