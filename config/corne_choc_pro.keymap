@@ -62,10 +62,10 @@
             //                    |     |     |     |               |     |     |     |
 
             bindings = <
-&trans  &trans      &trans       &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &trans     &trans  &trans  &kp HOME   &kp PG_DN        &kp PG_UP        &kp END          &kp DE_TILDE   &trans
-&trans  &kp DELETE  &kp DE_LT    &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_GT  &trans  &trans  &kp LEFT   &kp DOWN         &kp UP           &kp RIGHT        &kp ENTER      &trans
-&trans  &kp K_CUT   &kp K_PASTE  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &trans                     &kp UNDER  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp DE_U_UMLAUT  &kp DE_ESZETT  &trans
-                                 &trans                   &trans                    &trans                     &trans     &trans           &trans
+&trans  &trans      &trans     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &trans     &trans  &trans  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp DE_TILDE  &trans
+&trans  &kp DELETE  &kp DE_LT  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_GT  &trans  &trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans        &trans
+&trans  &trans      &trans     &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &trans                     &kp UNDER  &trans     &trans     &trans     &trans        &trans
+                               &trans                   &trans                    &trans                     &trans     &trans     &trans
             >;
         };
 
