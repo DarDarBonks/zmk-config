@@ -24,12 +24,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-        ToggleLayer: ToggleLayer {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOGGLELAYER";
-            #binding-cells = <1>;
-        };
     };
 
     keymap {
@@ -114,18 +108,9 @@
 
             bindings = <
 &kp ESC  &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R  &kp DE_T  &trans  &trans  &kp DE_Z  &kp DE_U  &kp DE_I      &kp DE_O    &kp DE_P         &kp DE_U_UMLAUT
-&trans   &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F  &kp DE_G  &trans  &trans  &kp DE_H  &kp DE_J  &kp DE_K      &kp DE_L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&trans   &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V  &kp DE_B                  &kp DE_N  &kp DE_M  &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS     &trans
+&tog 4   &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F  &kp DE_G  &trans  &trans  &kp DE_H  &kp DE_J  &kp DE_K      &kp DE_L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&mo 3    &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V  &kp DE_B                  &kp DE_N  &kp DE_M  &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS     &trans
                              &trans    &trans    &trans                    &trans    &trans    &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
