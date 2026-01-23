@@ -41,7 +41,7 @@
             bindings = <
 &kp DE_J  &kp DE_Z  &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q               &trans  &trans  &kp DE_P                 &kp DE_B  &kp DE_M                   &kp DE_L    &kp DE_F  &kp DE_ESZETT
 &trans    &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O               &trans  &trans  &kp DE_D                 &kp DE_T  &kp DE_N                   &kp DE_R    &kp DE_H  &kp BACKSPACE
-&trans    &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT                        &kp DE_W                 &kp DE_G  &kp DE_COMMA               &kp DE_DOT  &kp DE_K  &trans
+&mo 3     &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT                        &kp DE_W                 &kp DE_G  &kp DE_COMMA               &kp DE_DOT  &kp DE_K  &trans
                               &kp LGUI         &mo 1            &HoldTap LSHIFT SPACE                  &HoldTap LEFT_ALT ENTER  &mo 2     &HoldTap LEFT_CONTROL TAB
             >;
         };
