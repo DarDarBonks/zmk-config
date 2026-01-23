@@ -73,10 +73,10 @@
             //                    |     |     |     |               |     |     |     |
 
             bindings = <
-&trans  &trans      &trans     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &trans     &trans  &trans  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp DE_TILDE  &trans
-&trans  &kp DELETE  &kp DE_LT  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_GT  &trans  &trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans        &trans
-&trans  &trans      &trans     &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &trans                     &kp UNDER  &trans     &trans     &trans     &trans        &trans
-                               &trans                   &trans                    &trans                     &trans     &trans     &trans
+&trans  &trans      &trans     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &trans     &trans  &trans  &trans     &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &trans
+&trans  &kp DELETE  &kp DE_LT  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_GT  &trans  &trans  &kp TILDE  &kp DOWN     &kp DOWN  &kp RIGHT      &trans  &trans
+&trans  &trans      &trans     &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &trans                     &trans     &kp HOME     &trans    &kp END        &trans  &trans
+                               &trans                   &trans                    &trans                     &trans     &trans       &trans
             >;
         };
 
