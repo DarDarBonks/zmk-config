@@ -4,14 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: DarDarBonks
       url-base: https://github.com/DarDarBonks
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: nice-view-gem
+    - name: nice-view-dardar
       remote: DarDarBonks
       revision: main
   self:
